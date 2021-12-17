@@ -50,12 +50,23 @@ main {
     background-color: white;
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(145, 145, 145, 0.39); }
     .role__card h4 {
       margin-top: 20px;
       text-align: center;
       font-size: 24px;
       color: #C4817F; }
+    .role__card:hover {
+      animation: move-up-down .5s linear 1; }
+
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-30px); }
+  100% {
+    transform: translateY(0); } }
 
 .site-bg {
   position: absolute;
