@@ -1,0 +1,27 @@
+
+.role{
+    z-index: 1;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 40px;
+    &__card{
+        cursor: pointer;
+        border-radius: 40px;
+        padding: 20px;
+        // width: 250px;
+        margin: 0 auto;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h4{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: $pink-1;
+        }
+    }
+}
