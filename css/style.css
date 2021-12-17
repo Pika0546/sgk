@@ -141,6 +141,8 @@ main {
     font-weight: bold;
     flex-grow: 0;
     align-self: flex-end; }
+    .login__form .btn a {
+      color: white; }
 
 .btn__return {
   position: absolute;
