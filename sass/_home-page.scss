@@ -28,6 +28,12 @@
             animation: move-up-down .5s linear 1;
         }
     }
+    @include respon(650){
+        grid-template-columns: repeat(1, 300px);
+    }
+    @include respon(400){
+        grid-template-columns: repeat(1, 250px);
+    }
 }
 
 @keyframes move-up-down{
@@ -41,3 +47,4 @@
         transform: translateY(0);
     }
 }
+

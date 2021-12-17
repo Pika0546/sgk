@@ -30,6 +30,7 @@ main {
   padding: 5px 0;
   padding-left: 20px;
   width: 100%;
+  z-index: 1;
   box-shadow: 0 5px 3px rgba(119, 119, 119, 0.26); }
   .sgk-nav img {
     width: 300px; }
@@ -59,6 +60,12 @@ main {
       color: #C4817F; }
     .role__card:hover {
       animation: move-up-down .5s linear 1; }
+  @media (max-width: 650px) {
+    .role {
+      grid-template-columns: repeat(1, 300px); } }
+  @media (max-width: 400px) {
+    .role {
+      grid-template-columns: repeat(1, 250px); } }
 
 @keyframes move-up-down {
   0% {
@@ -80,7 +87,7 @@ main {
     z-index: -9;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     clip-path: ellipse(84% 39% at 50% 10%);
     background-color: #FCF5E1; }
   .site-bg__paper-plane {
@@ -123,6 +130,7 @@ main {
   .login__form .form-group:nth-child(2) {
     margin-bottom: 5px; }
   .login__form .forget-password-txt {
+    color: black;
     font-size: 14px;
     font-weight: 600;
     font-style: italic; }
@@ -133,3 +141,13 @@ main {
     font-weight: bold;
     flex-grow: 0;
     align-self: flex-end; }
+
+.btn__return {
+  position: absolute;
+  top: 90px;
+  left: 30px;
+  background-color: #F5BD8A;
+  border-radius: 20px;
+  font-weight: bold; }
+  .btn__return a {
+    color: white; }

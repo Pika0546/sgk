@@ -31,3 +31,29 @@ a{
 main{
     z-index: 1;
 }
+
+@mixin  respon($breakpoint) {
+    
+    @if $breakpoint == 400{
+        @media (max-width: 400px){@content};
+    }
+    @if $breakpoint == 600{
+        @media (max-width: 600px){@content}; //600px
+    }
+    @if $breakpoint == 650{
+        @media (max-width: 650px){@content}; //600px
+    }
+    @if $breakpoint == 750{
+        @media (max-width: 750px){@content};
+    }
+    @if $breakpoint == 900{
+        @media (max-width: 900px){@content};  //900px
+    }
+    @if $breakpoint == 1200{
+        @media (max-width: 1200px){@content}; //1200px
+    }
+    @if $breakpoint == 1800{
+        @media (min-width: 1800px){@content}; //1800px
+    }
+}
+
